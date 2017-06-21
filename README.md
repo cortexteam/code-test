@@ -1,6 +1,6 @@
 # Cortex Development Code Test
 
-Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send them to: <TBD>
+Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send them to: *TBD*
 
 Complete the main project and your choice of any two of the additional projects.
 
@@ -15,11 +15,11 @@ For us, micro-services are:
   * Can each have many running instances; and
   * Are not guaranteed to remain alive (process death is expected).
 
-Please build these micro-services that will:
-  * Collector: read the input data (see resources)
-  * Parser: parse and translate the data (see resources for output format)
-  * Persister: store the data (your choice of persistent storage) and;
-  * Reporter: correlate and display the data (list and group data like in *report-schema.json*)
+Please build four micro-services that will:
+  * *Collector*: read the input data (see resources)
+  * *Parser*: parse and translate the data (see resources for output format)
+  * *Persister*: store the data (your choice of persistent storage) and;
+  * *Reporter*: correlate and display the data (list and group data like in *report-schema.json*)
 
 ### Minimum requirements:
   * Each micro-service should run as a separate process
@@ -35,7 +35,7 @@ Please build these micro-services that will:
 ### Please complete two of the following:
 **Option 1:**
 
-Add a unit tests for the main project to acheive 100% code coverage
+Add a unit tests for the main project to acheive 100% code coverage.
 
 **Option 2:**
 
@@ -52,3 +52,7 @@ When 2 or more instances of same micro-service can co-exist in the same ecosyste
 
 ## Resources
 <TBD>
+
+## Submission
+
+Submit your completed work to: TBD
