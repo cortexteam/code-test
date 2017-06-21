@@ -19,23 +19,23 @@ Please build these micro-services that will:
   * Collector: read the input data (see resources)
   * Parser: parse and translate the data (see resources for output format)
   * Persister: store the data (your choice of persistent storage) and;
-  * Reporter: correlate and display the data (list and group data like in report-schema.json)
+  * Reporter: correlate and display the data (list and group data like in *report-schema.json*)
 
 ### Minimum requirements:
   * Each micro-service should run as a separate process
   * Write a *README.md* file with any explanation and instructions for running this application
 
 ### Minimum functionality:
-  * Collector application should read JSON payload from file and store it for the Parser application.  The input.json file contains both original invoice documents and responses to invoice documents.
-  * Parser application should read from the data stored by the Collector application and store each item for the Persister application as a new, formatted individual entity using the defined schema (see schema.json).  Note that in this schema the documentType field should have a value of either "Invoice" or "Response" and the originalDocumentNumber and status fields will only be populated for response documents.
+  * Collector application should read JSON payload from file and store it for the Parser application.  The *input.json* file contains both original invoice documents and responses to invoice documents.
+  * Parser application should read from the data stored by the Collector application and store each item for the Persister application as a new, formatted individual entity using the defined schema (see *schema.json*).  Note that in this schema the *documentType* field should have a value of either `monospace`Invoice`monospace` or `monospace`Response`monospace` and the *originalDocumentNumber* and *status* fields will only be populated for response documents.
   * Persister application should store each datum that the Parser processed and save it into non-volatile storage
-  * Reporter application returns the final data as a JSON payload.  Response documents are to be grouped with their originating invoice (an example record is provided in report-schema.json).  Correlation can be done by matching a response’s originalDocumentNumber field to an invoice’s documentNumber field.  Additionally response documents should be ordered by their date, having the newest response listed first.
+  * Reporter application returns the final data as a JSON payload.  Response documents are to be grouped with their originating invoice (an example record is provided in *report-schema.json*).  Correlation can be done by matching the *originalDocumentNumber* field on a response document to the *documentNumber* field on an invoice document.  Response documents should be ordered by their date, having the newest response listed first.
 
 ## ADDITIONAL PROJECTS:
 ### Please complete two of the following:
 **Option 1:**
 
-Add a unit test for the main project with 100% coverage
+Add a unit tests for the main project to acheive 100% code coverage
 
 **Option 2:**
 
