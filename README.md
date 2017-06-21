@@ -1,6 +1,6 @@
 # Cortex Development Code Test
 
-Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send them to: *TBD*
+Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send these to: *TBD*
 
 Complete the main project and your choice of any two of the additional projects.
 
@@ -16,10 +16,10 @@ For us, micro-services are:
   * Are not guaranteed to remain alive (process death is expected).
 
 Please build four micro-services that will:
-  * *Collector*: read the input data (see resources)
-  * *Parser*: parse and translate the data (see resources for output format)
-  * *Persister*: store the data (your choice of persistent storage) and;
-  * *Reporter*: correlate and display the data (list and group data like in *report-schema.json*)
+  * **Collector**: read the input data (see resources)
+  * **Parser**: parse and translate the data (see resources for output format)
+  * **Persister**: store the data (your choice of persistent storage) and;
+  * **Reporter**: correlate and display the data (list and group data like in *report-schema.json*)
 
 ### Minimum requirements:
   * Each micro-service should run as a separate process
@@ -27,7 +27,7 @@ Please build four micro-services that will:
 
 ### Minimum functionality:
   * Collector application should read JSON payload from file and store it for the Parser application.  The *input.json* file contains both original invoice documents and responses to invoice documents.
-  * Parser application should read from the data stored by the Collector application and store each item for the Persister application as a new, formatted individual entity using the defined schema (see *schema.json*).  Note that in this schema the *documentType* field should have a value of either `monospace`Invoice`monospace` or `monospace`Response`monospace` and the *originalDocumentNumber* and *status* fields will only be populated for response documents.
+  * Parser application should read from the data stored by the Collector application and store each item for the Persister application as a new, formatted individual entity using the defined schema (see *schema.json*).  Note that in this schema the *documentType* field should have a value of either `Invoice` or `Response` and the *originalDocumentNumber* and *status* fields will only be populated for response documents.
   * Persister application should store each datum that the Parser processed and save it into non-volatile storage
   * Reporter application returns the final data as a JSON payload.  Response documents are to be grouped with their originating invoice (an example record is provided in *report-schema.json*).  Correlation can be done by matching the *originalDocumentNumber* field on a response document to the *documentNumber* field on an invoice document.  Response documents should be ordered by their date, having the newest response listed first.
 
