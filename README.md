@@ -16,10 +16,10 @@ For us, micro-services are:
   * Are not guaranteed to remain alive (process death is expected).
 
 Please build four micro-services that will:
-  * **Collector**: read the input data (see resources)
-  * **Parser**: parse and translate the data (see resources for output format)
+  * **Collector**: read the input data ([input data](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/input.json))
+  * **Parser**: parse and translate the data ([parsed format example](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/schema.json))
   * **Persister**: store the data (your choice of persistent storage) and;
-  * **Reporter**: correlate and display the data (list and group data like in *report-schema.json*)
+  * **Reporter**: correlate and display the data ([report schema example](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/report-schema.json))
 
 ### Minimum requirements:
   * Each micro-service should run as a separate process
@@ -48,10 +48,6 @@ How would you architect auto-scalability of micro-services?
 **Option 4:**
 
 When 2 or more instances of same micro-service can co-exist in the same ecosystem, how would you architect the micro-service ecosystem so the data is only processed once?
-
-
-## Resources
-<TBD>
 
 ## Submission
 
