@@ -35,7 +35,7 @@ Please build four micro-services that will:
 ### Please complete two of the following:
 **Option 1:**
 
-Add a unit tests for the main project to acheive 100% code coverage.
+Add unit tests for the main project to acheive 100% code coverage for each micro-service.
 
 **Option 2:**
 
@@ -51,4 +51,4 @@ When 2 or more instances of same micro-service can co-exist in the same ecosyste
 
 ## Submission
 
-Submit your completed work to: TBD
+Submit your completed work to: *TBD*
