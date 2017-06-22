@@ -1,6 +1,6 @@
 # Cortex Development Code Test
 
-Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send these to: dev@cortex.net
+Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send these to: hr@cortex.net
 
 Complete the main project and your choice of any two of the additional projects.
 
@@ -51,4 +51,4 @@ When 2 or more instances of same micro-service can co-exist in the same ecosyste
 
 ## Submission
 
-Submit your completed work to: dev@cortex.net
+Submit your completed work to: hr@cortex.net
