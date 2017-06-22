@@ -1,6 +1,6 @@
 # Cortex Development Code Test
 
-Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send these to: *TBD*
+Please review the following exercises before you begin.  If you require additional clarification please compile your questions and send these to: dev@cortex.net
 
 Complete the main project and your choice of any two of the additional projects.
 
@@ -16,10 +16,10 @@ For us, micro-services are:
   * Are not guaranteed to remain alive (process death is expected).
 
 Please build four micro-services that will:
-  * **Collector**: read the input data ([input data](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/input.json))
-  * **Parser**: parse and translate the data ([parsed format example](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/schema.json))
+  * **Collector**: read the input data ([input.json](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/input.json))
+  * **Parser**: parse and translate the data (parsed format example: [schema.json](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/schema.json))
   * **Persister**: store the data (your choice of persistent storage) and;
-  * **Reporter**: correlate and display the data ([report schema example](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/report-schema.json))
+  * **Reporter**: correlate and display the data (report schema example: [report-schema.json](https://raw.githubusercontent.com/cortexteam/code-test/master/resources/report-schema.json))
 
 ### Minimum requirements:
   * Each micro-service should run as a separate process
@@ -51,4 +51,4 @@ When 2 or more instances of same micro-service can co-exist in the same ecosyste
 
 ## Submission
 
-Submit your completed work to: *TBD*
+Submit your completed work to: dev@cortex.net
